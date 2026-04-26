@@ -1,0 +1,465 @@
+:root{
+    --color-main:#ce1212;
+    --background-main: white;
+    --text-main:black
+}
+:root:has(mode:checked){
+    --color-main:#C17E1F;
+    --background-main:black;
+    --text-main:white;
+}
+
+
+
+.menu {
+    background-color: var(--background-main) ;
+    width: 100%;
+    color:var(--text-main)
+}
+.menu .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-block: 20px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35);
+}
+.menu .meal {
+    color: black;
+    display: flex;
+    margin-left: 100px;
+    width: 10px;
+    list-style: none;
+}
+
+.container .links {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.limks ul{
+    padding: 0;
+    list-style: none;
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.links .moon {
+    display: flex;
+    margin-left: 900px;
+    color: black;
+}
+@media screen and (min-width:640px){
+    nav ul{
+        display: flex;
+        gap:20px;
+    }
+}
+
+@media screen and (min-width:768px){}
+
+@media screen and (min-width:1024px){
+    menu-two{
+        display: flex;
+    }
+}
+
+@media screen and (min-width:1280px){}
+
+@media screen and (min-width:1536px){}
+
+    
+
+.menu-two {
+    padding-top: 100px;
+    background-color: rgb(230, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    width: 40%;
+}
+
+.text .h1 {
+    color: #37373f;
+    padding-bottom: 10px;
+    font-size: 4.065rem;
+    font-family: "Amatic SC", sans-serif;
+}
+.buttons {
+    padding: 10px 20px;
+    border: 1px solid beige;
+    display: flex;
+    gap:20px;
+    align-items: center;
+
+}
+.button-one {
+    background-color:  #ce1212;
+    color: white;
+
+}
+.button-two {
+    background-color: white;
+    color: black;
+}
+
+.p-one {
+    color: rgb(141, 137, 137);
+    padding-top: 10px;
+    line-height: 26px;
+    margin-block: 10px;
+}
+
+.p-two {
+    color: rgb(141, 137, 137);
+    padding-bottom: 10px;
+    line-height: 26px;
+    margin-block: 10px;
+}
+.menu-two .plate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plate img {
+    width: 40%;
+
+}
+
+.chefs {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.cont h2 {
+    text-align: center;
+    color: rgb(58, 57, 57);
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.cont h1 {
+    text-align: center;
+    color: rgb(41, 40, 40);
+    font-family: "Amatic SC", sans-serif;
+}
+
+.chefess {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.chef-image {
+    border: 1px solid black;
+    width: 25%;
+}
+
+.chef-image h2 {
+    text-align: center;
+    color: black;
+}
+
+.chef-image h5 {
+    text-align: center;
+    color: #7f7f90;
+}
+
+.chef-image p {
+    text-align: center;
+    color: #7f7f90;
+
+}
+
+.chef-one img {
+    width: 100%;
+    transition: 0.4 s;
+}
+.chef-image ul{
+    list-style: none;
+}
+.log{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    bottom: 0;
+    color: rgb(216, 198, 198);
+    overflow: hidden;
+    transition: 1s all;
+}
+.chef-image:hover{
+    background-color: rgb(238, 231, 231);
+    transform: scale(1.1);
+}
+.chef-image:hover .log{
+    right: 10px;
+    color: rgb(150, 148, 148);
+
+}
+
+.chef-two img {
+    width: 100%;
+}
+
+.chef-three img {
+    width: 100%;
+}
+
+.inner h3 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.inner h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.gallery {
+    background-color: white;
+    display: grid;
+    grid-template-areas: "item-1 item-2 item-3"
+        "item-4  item-2 item-6"
+        "item-4  item-5  item-7 "
+}
+
+.gallery>figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.gallery>figure {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery>figure figcaption {
+    background-color: rgba(0, 0, 0, 0.44);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(70, 69, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transform: translateY(100%);
+    transition: 1s all ease;
+}
+
+.gallery>figure:hover figcaption {
+    transform: translateY(0%);
+}
+
+.item-1 {
+    grid-area: item-1;
+    background-image: url(./images/meal-1.jpg);
+}
+
+.item-2 {
+    grid-area: item-2;
+    background-image: url(./images/meal-2.jpg);
+}
+
+.item-3 {
+    grid-area: item-3;
+    background-image: url(./images/meal-3.jpg);
+}
+
+.item-4 {
+    grid-area: item-4;
+    background-image: url(./images/meal-4.jpg);
+}
+
+.item-5 {
+    grid-area: item-5;
+    background-image: url(./images/meal-5.jpg);
+}
+
+.item-6 {
+    grid-area: item-6;
+    background-image: url(./images/meal-6.jpg);
+}
+
+.item-7 {
+    grid-area: item-7;
+    background-image: url(./images/meal-7.jpg);
+}
+
+.contact {
+    width: 100%;
+}
+
+.help h2 {
+    text-align: center;
+    color: #7f7f90 ;
+}
+
+.help h1 {
+    text-align: center;
+    font:"Amatic SC", sans-serif;;
+}
+
+.map {
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.lower {
+    width: 100%;
+    display: flex;
+    padding-left: 100px;
+}
+
+.our {
+    border: 1px solid black;
+    width: 30%;
+    justify-content: space-around;
+}
+.open{
+    border: 1px solid black;
+    width: 30%;
+    justify-content: space-around;
+}
+.table .container {
+    width: 80%;
+    border: 1px solid rgb(250, 247, 247);
+}
+
+.name {
+    width: 49%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+}
+
+.email {
+    width: 49%;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.subject {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.message {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.input:focus,
+textarea:focus {
+    border-color: red;
+    outline: none;
+}
+
+.submit {
+    color: white;
+    text-align: center;
+    background-color: rgb(182, 44, 90);
+    padding: 10px;
+    align-items: center;
+}
+
+.submit:hover {
+    background-color: rgb(161, 62, 26);
+    cursor: not-allowed;
+}
+
+.foot .container {
+    width: 100%;
+    background-image: url(./images/metal.jpg);
+    display: flex;
+}
+
+.footer {
+    flex-direction: row;
+}
+
+.footer .fork img {
+    width: 5%;
+}
+
+.footer h1 {
+    color: white;
+}
+
+.footer p {
+    color: white;
+    padding-bottom: 10px;
+    width: 20%;
+}
+
+.footer h3 {
+    padding-bottom: 20px;
+    color: white;
+}
+
+.logos {
+    list-style: none;
+    color: white;
+    ;
+}
+
+.border {
+    list-style: none;
+}
+
+.address {
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+.subscribe {
+    background-color: rgb(206, 53, 53);
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.footer h3 {
+    padding-bottom: 10px;
+    color: white;
+}
+
+.footer ul {
+    color: white;
+    list-style: none;
+}
+
+.footer h2 {
+    color: white;
+}
